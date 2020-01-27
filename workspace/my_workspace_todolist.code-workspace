@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "D:\\work\\my_own\\to-do-list"
+		}
+	],
+	"settings": {
+		"emmet.includeLanguages": {
+			"edge": "html",
+			"vue-html": "html",
+			"vue": "html"
+		}
+	}
+}
