@@ -1,8 +1,15 @@
 <template>
-  <div id="app">
-    <h1>Todo List</h1>
+  <div>
+    <h2>Todo List Application</h2>
     <hr>
-    <router-view />
+    <AddTodo
+      @add-todo="addTodoMain"
+    />
+    <hr>
+    <TodoList 
+      v-bind:todos="todos"
+      @rmItem="remItem"
+    />
   </div>
 </template>
 
@@ -40,14 +47,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

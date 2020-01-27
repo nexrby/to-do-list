@@ -2,8 +2,9 @@
     <div>
         <ul>
             <TodoItem 
-                v-for="todo in todos"
+                v-for="(todo, i) in todos"
                 :todo="todo"
+                :index="i"
                 @remove-todo="rmTodo"
             />
         </ul>
