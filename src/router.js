@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/views/Homevue-router'
+import Home from '@/views/Home'
+import Contacts from '@/views/Contacts'
 
 Vue.use(Router)
 
-export default new Router(){
+export default new Router({
 	mode: 'history',
 	routes: [
 		{
@@ -13,7 +14,11 @@ export default new Router(){
 		},
 		{
 			path: '/todos',
-			component: () => import(./views/Todos.vue)
+			component: () => import('./views/Todos.vue')
+		},
+		{
+			path: '/contacts',
+			component: () => import('./views/Contacts.vue')
 		}
 	]
-}
+})
